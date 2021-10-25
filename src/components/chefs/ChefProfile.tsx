@@ -1,7 +1,6 @@
 import { Chef } from '../../types/Data';
 
 const ChefProfile = (data: Chef) => {
-  console.log(data);
   return (
     <form className="chefprofile">
       <img style={{ width: '50px' }} src={data.image} alt={data.name} />

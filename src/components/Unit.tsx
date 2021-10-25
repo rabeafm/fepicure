@@ -9,7 +9,6 @@ import ResturantProfile from './resturants/ResturantProfile';
 
 const Unit = ({ cookies, content, id }: unitProps) => {
   const [response, setResponse] = useState<Response>();
-  useEffect(() => {}, [response]);
   useEffect(() => {
     getData(content, id, cookies.token).then(setResponse);
     // eslint-disable-next-line

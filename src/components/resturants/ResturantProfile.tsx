@@ -1,8 +1,6 @@
 import { Resturant } from '../../types/Data';
 
 const ResturantProfile = (data: Resturant) => {
-  console.log(data);
-
   return (
     <form className="resturantprofile">
       <img style={{ width: '50px' }} src={data.image} alt={data.name} />

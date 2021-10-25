@@ -1,7 +1,6 @@
 import { Chef, ChefGrid, Resturant } from '../../types/Data';
 
 const ChefTable = ({ setContent, setId, data }: ChefGrid) => {
-  console.log(data);
   return (
     <table className="cheftable">
       <thead>

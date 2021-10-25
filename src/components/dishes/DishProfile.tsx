@@ -1,8 +1,6 @@
 import { Dish } from '../../types/Data';
 
 const DishProfile = (data: Dish) => {
-  console.log(data);
-
   return (
     <form className="dishprofile">
       <label htmlFor="name">Dish Name:</label>

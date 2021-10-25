@@ -9,7 +9,6 @@ import ResturantTable from './resturants/ResturantTable';
 
 const Table = ({ cookies, content, setContent, id, setId }: tableProps) => {
   const [response, setResponse] = useState<Response>();
-  useEffect(() => {}, [response]);
   useEffect(() => {
     getData(content, id, cookies.token).then(setResponse);
     // eslint-disable-next-line

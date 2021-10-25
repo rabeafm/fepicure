@@ -1,8 +1,6 @@
 import { Dish, DishGrid } from '../../types/Data';
 
 const DishTable = ({ setContent, setId, data }: DishGrid) => {
-  console.log(data);
-
   return (
     <table className="dishtable">
       <thead>

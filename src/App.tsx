@@ -22,8 +22,6 @@ const App = () => {
     }
     // eslint-disable-next-line
   }, []);
-  // update once the user state is set
-  useEffect(() => {}, [user]);
 
   return (
     <div className="App">

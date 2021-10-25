@@ -1,8 +1,6 @@
 import { Dish, Resturant, ResturantGrid } from '../../types/Data';
 
 const ResturantTable = ({ setContent, setId, data }: ResturantGrid) => {
-  console.log(data);
-
   return (
     <table className="resturanttable">
       <thead>
