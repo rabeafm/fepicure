@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+$Font: 'Roboto', sans-serif;
+$PrimaryColor: #79b336;
+$SecondaryColor: #0e7214;
+$LightColor: #bee2d5;
+$DarkColor: #240c3b;
+$FontSize: 1rem;
+$MobileFontSize: 0.9rem;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: $Font;
+  font-size: $FontSize;
+  @media (max-width: 769px) {
+    font-size: $MobileFontSize;
+  }
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  background-color: $PrimaryColor;
+  display: flex;
+  overflow: hidden;
+}
+
+.logincard {
+  margin: auto;
+  padding: 40px;
+  width: 350px;
+  min-height: 500px;
+  background-color: $LightColor;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h2 {
+    color: $DarkColor;
+  }
+  .loginform {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    color: $DarkColor;
+    justify-content: space-between;
+    align-content: space-between;
+  }
+}
+
+.Tabs {
+  border: 0.3rem solid $LightColor;
+  width: 90%;
+  min-height: 100vh;
+  // background: url("./components/emilio-unsplash.jpg") no-repeat center center/cover;
+  margin: 2rem auto 3rem;
+  color: $DarkColor;
+  @media (max-width: 769px) {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+}
+
+ul.nav {
+  width: 60%;
+  margin: -0.3rem auto 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 0.3rem solid $LightColor;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+  .active {
+    background-color: $SecondaryColor !important;
+    color: $LightColor !important;
+    opacity: 1 !important;
+  }
+
+  li {
+    height: 5rem;
+    width: 20%;
+    padding: 1rem;
+    list-style: none;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.7s;
+    font-weight: bold;
+    font-size: 1.2em;
+
+    &:first-child {
+      border-bottom-left-radius: 1rem;
+    }
+    &:last-child {
+      border-bottom-right-radius: 1rem;
+    }
+    &:hover {
+      background: $LightColor;
+      color: $DarkColor;
+      opacity: 0.75;
+    }
+  }
+}
